@@ -87,7 +87,7 @@ function findUnicorn(pickupLocation) {
 
 function recordRide(rideId, username, unicorn) {
     return ddb.put({
-        TableName: '', # .ex table-name: handson-dynamodb-username
+        TableName: '', // .ex table-name: handson-dynamodb-username
         Item: {
             RideId: rideId,
             User: username,
